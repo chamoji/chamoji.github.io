@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>The Options Algorithm</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+
+		  <h1 class="title"><a href="/"><img src="/assets/nosound_logo.png"></a></h1>
+	    <!-- <a class="extra" href="/">home</a>-->
+          </div>
+
+          <h2>The Options Algorithm</h2>
+<p class="meta">05 Feb 2014</p>
+
+<div class="post">
+<h2>Introduction</h2>
+<p>Any fan of Gradius should recognize the unique "Options"
+mechanic that has become a staple of the series. Some of these fans
+are also programmers, hobbyist or otherwise, that would like to mimic
+this mechanic in their own creations (hint hint). I have done my own
+research on this mechanic and have found very little in regards to
+implementation and examples.</p>
+
+<p>
+<i>Enter: this tutorial.</i>
+</p>
+
+<h2>Tutorial Objective</h2>
+<p>In this tutorial I will describe my way of implementing the
+Options snake-like behavior in a general way. I will briefly describe
+an approach I took that failed initially. Then I finish off by
+explaining my final implementation which is a culmination of what
+worked from the previous failures.</p>
+
+<p>
+<b>My hope is that you do not just copy code and pray it works.</b>
+What I provide here is the intuition behind the development of this
+algorithm. It's up to you to understand it and apply the concepts
+explained here. For that reason I have very sparingly sprinkled some
+pseudo-code to illustrate certain points.
+</p>
+
+<h2>Options Algorithm Basics</h2>
+<p>For those unfamiliar with the concept of Options here is a
+quick rundown of what they are all about.</p>
+
+<p>Options are usually used in a STG (Shooting Game) context.
+Whether it is a horizontal or vertical STG, an Option is the term
+used to describe a supplemental fighter to the main ship or
+character.</p>
+
+<p>The Options I will go over this tutorial are the classic ones
+which exhibit a snake-like behavior that trail behind the player's
+character.</p>
+
+<p>An algorithm that can accomplish this behavior will have the
+following properties:</p>
+
+<ul>
+<li>Ways to retrieve the main ship's coordinates and store it.</li>
+<li>Ways to update the Options coordinates based on some rule.</li>
+<li>Only updates the positions when the player inputs a movement
+command.</li>
+<li>Follows the leader's path exactly but with some delay for
+each additional follower</li>
+</ul>
+
+
+<h2>Attempt 1: Distance-Based Approach</h2>
+<p>Observe the following code which is executed during a movement
+command (player has input left, right, up, or down):</p>
+
+<div class="highlight"><pre><code class="java"><span class="k">if</span> <span class="o">(</span><span class="n">distance_from_leader</span> <span class="o">&gt;</span> <span class="n">GAP_SIZE</span><span class="o">)</span> <span class="o">{</span> 
+   <span class="c1">//get main ship&#39;s previous position</span>
+      <span class="c1">//update the Options coordinates</span>
+      <span class="o">}</span>
+      
+</code></pre></div>
+      <p>This approach uses distance as an indicator of when to move the
+      Options to the leader's previous coordinates. The gap size condition
+      is a very explicit way of getting the Options separated. Up to a
+      certain point, this approach accomplishes trailing the leader well.</p>
+
+      <p>
+      The problem with this implementation? <i>Distance is not a
+      consistent enough factor to rely on.</i> The actual Options behavior
+      keeps a constant distance away from the leader and a constant
+      distance away among each of the Options.
+      </p>
+
+
+      <b>Problem</b>: A distance-based approach will cause drifting.
+
+
+      <p>Depending on when you update the previous position of the
+      leader, this will result in a drifting effect. That is, as the main
+      ship passes through the Options, the position of the leader is
+      temporarily unused.</p>
+
+      <p>Therefore, as long as:</p>
+      <div class="highlight"><pre><code class="java">      <span class="n">distance_from_leader</span> <span class="o">&lt;=</span> <span class="n">GAP_SIZE</span>
+      
+</code></pre></div>
+      <p>the Options will "drift" further and further away from the
+      leader.</p>
+
+      <p>So in order to continue we need to solve this problem along the
+      way. But don't fret. At the very least we have a part of the
+      algorithm solved. That is, we have a way of making the options follow
+      the leader so it's a start. Keeping track of some size of the path
+      seemed to be working, it just needs something simpler to accomplish
+      the task.</p>
+
+      <h2>Attempt 2: Queue-Based Approach</h2>
+      <p>So knowing that distance wasn't the way to go I had to search
+      through other avenues. Eventually I arrived at a very basic data
+      structure. The queue.</p>
+
+      <p>A queue is the perfect data structure for the job. Its FIFO
+      (First-in-first-out) property fits like a glove with the Options
+      behavior. A global queue can be used to store the Options' positions
+      so that as they get in line you can grab the previous element's
+      position and the newest element in line can follow the correct
+      element in the queue. Additionally, you can use a queue to store the
+      path each element will take (a queue for the next person in line's
+      previous position) so that each Option follows the correct "person"
+      in line.</p>
+
+      <p>So a typical scenario would be like the following:</p>
+
+      <blockquote>Option#1 gets in line. It gets the leader's
+      position and stores it in its own queue. Then it stores its own
+      position in a global queue that all elements can see. This sets up
+      the global queue for additional elements so that they can grab the
+      previous element's position. The next person in line can now follow
+      the previous person in line.</blockquote>
+
+      <p>
+      So now this leaves us with the same problem. When do we update the
+      positions of each element in the queue if distance will cause
+      drifting? The answer is to use a consistent factor to get consistent
+      results. Looking at our setup we see that we are <i>constantly</i>
+      adding and removing elements from our queues. As the queues grow, so
+      does the path each element has to follow and vice versa. So it's only
+      natural that we come to our answer.
+      </p>
+
+      <b>Solution:</b> The path queue offers a reliable figure such that
+      using it as our basis for updating the positions of each element
+      will be consistent. A path queue's size solves our problem.
+      <h2>And Finally...</h2>
+      <p>We come to a general algorithm we can apply in any language to
+      get the snake-like behavior of the classic Options of Gradius fame.
+      The only thing new we need to add is a factor called a delay or a
+      step-size. This figure determines at what size we should start
+      letting the elements follow their paths. A size of, say, 20 will tell
+      each Option to follow their path after 20 positions have been filled
+      in their path queues.</p>
+
+      <b>In the main game loop:</b> <br />
+      <div class="highlight"><pre><code class="java">      <span class="k">if</span> <span class="o">(</span><span class="n">playerMoved</span><span class="o">)</span> <span class="o">{</span>
+      <span class="k">for</span> <span class="o">(</span><span class="n">options</span> <span class="o">:</span> <span class="n">globalOptionsQueue</span><span class="o">)</span> <span class="o">{</span>
+         <span class="n">moveOptions</span><span class="o">();</span>
+            <span class="o">}</span>
+    <span class="o">}</span>
+    
+</code></pre></div>
+    <br />
+    <b>moveOptions() function:</b> <br />
+    <div class="highlight"><pre><code class="java">    <span class="k">if</span> <span class="o">(</span><span class="n">isFirstOption</span><span class="o">)</span> <span class="o">{</span>
+       <span class="n">updatePath</span><span class="o">(</span><span class="n">leaderPosition</span><span class="o">);</span>
+    <span class="o">}</span>
+    <span class="k">else</span>
+       <span class="nf">updatePath</span><span class="o">(</span><span class="n">previousOptionPosition</span><span class="o">));</span>
+          <span class="k">if</span> <span class="o">(</span><span class="n">pathSize</span> <span class="o">&gt;</span> <span class="n">pathDelay</span><span class="o">)</span> <span class="o">{</span>
+             <span class="n">myX</span> <span class="o">=</span> <span class="n">headOfPathQueueX</span><span class="o">;</span>
+             <span class="n">myY</span> <span class="o">=</span> <span class="n">headOfPathQueueY</span><span class="o">;</span>
+             <span class="n">removeHeadOfQueue</span><span class="o">();</span>
+             <span class="n">updateGlobalOptionsQueue</span><span class="o">();</span>
+          <span class="o">}</span>
+      
+</code></pre></div>
+
+      <p>So there you have it. The thought process behind my
+      implementation of the Options Algorithm. Let me know if you have any
+      questions or if you have other ways of implementing Options.</p>
+      </body>
+
+      </html>
+
+
+</div>
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                glidesu<br />
+                Derp Frame Masher<br />
+                ore.wa.glidesu@gmail.com
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a href="https://github.com/glidesu">github.com/glidesu</a><br />
+                <a href="https://twitter.com/glidesu">(fighting games / fgc) twitter.com/glidesu</a><br />
+		<a href="https://twitter.com/lazydesuwa">(music games) twitter.com/lazydesuwa</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>
