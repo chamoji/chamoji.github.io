@@ -1,9 +1,0 @@
-# Site settings
-title: nosound
-email: ore.wa.glidesu@gmail.com 
-description: "digitized thoughts"
-url: "http://glidesu.github.io"
-
-# Build settings
-markdown: kramdown
-permalink: pretty
