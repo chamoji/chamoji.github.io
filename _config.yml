@@ -4,6 +4,7 @@ email: ore.wa.glidesu@gmail.com
 description: "digitized thoughts."
 baseurl: ""
 url: "http://glidesu.github.io"
+username: glidesu
 
 # Build settings
 markdown: kramdown
