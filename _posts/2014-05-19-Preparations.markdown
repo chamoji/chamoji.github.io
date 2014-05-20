@@ -10,4 +10,6 @@ because of a "natural gift".
 
 While I do believe there is some factor involving natural abilities, in the
 end of it all, becoming great at something is attained moreso with focused,
-deliberate practice rather than pure talents.
+deliberate practice rather than just pure talents.
+
+
