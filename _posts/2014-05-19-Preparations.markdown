@@ -4,7 +4,10 @@ title:  "Notes, preperation, learning."
 date:   2014-05-19 18:50:00 
 ---
 
-Welcome to nosound.
+It is my understanding that a lot of what goes into mastering a particular
+skill or field of work is often dismissed as "talent" or is only possible
+because of a "natural gift".
 
-I believe in honest, hard work. Therefore, I started this blog to detail my
-thoughts on self-improvement. 
+While I do believe there is some factor involving natural abilities, in the
+end of it all, becoming great at something is attained moreso with focused,
+deliberate practice rather than pure talents.
