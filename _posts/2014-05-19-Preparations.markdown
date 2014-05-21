@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Notes, preperation, learning."
+title:  "Notes, preparation, learning."
 date:   2014-05-19 18:50:00 
 ---
 
