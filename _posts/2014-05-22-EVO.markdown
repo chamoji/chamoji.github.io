@@ -1,0 +1,7 @@
+---
+layout: post
+title: "Training for EVO 2014"
+date: 2014-05-22
+---
+
+Introduction
