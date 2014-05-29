@@ -1,0 +1,16 @@
+---
+
+title: "za void beep boop brrrrrr mrgrgr"
+layout: page
+
+---
+
+directory
+---------
+[http://hst.pestermom.com/sm]/sm
+
+external
+--------
+[http://www.twitter.com/glidesu]Twitter: @glidesu
+[http://www.github.com/glidesu]Github: glidesu
+[http://glidesu.github.io]blog
