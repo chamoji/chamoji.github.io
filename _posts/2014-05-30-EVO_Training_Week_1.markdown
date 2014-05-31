@@ -49,11 +49,13 @@ What I am looking for in logging my progress are ways to improve the training
 process.
 
 The main components are the following:
+
 - A way to capture data.
 - A way to analyze the data.
 - A way to get feedback based on changes you make from analysis.
 
-With saved replays I have come up with a simple cycle.
+With saved replays I have come up with a simple cycle:
+
 1. Netplay. Save replays that you believe are worth analyzing.
 2. Study those replays and take notes. 
 3. Return to netplay and apply what you noted. Go to Step 1 as needed 
