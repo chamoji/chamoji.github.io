@@ -13,7 +13,7 @@ preparation for EVO. I have a little over one month to target specific areas
 of my play that present obvious weaknesses and improve upon those areas.
 
 Week 1
-======
+------
 A shaky start for training. Had to experiment when I was the most alert so I
 could analyze my matches with my full attention and focus. 
 
