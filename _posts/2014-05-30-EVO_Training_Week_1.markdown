@@ -49,12 +49,12 @@ What I am looking for in logging my progress are ways to improve the training
 process.
 
 Ideally the cycle of improvement / learning for me would be:
-1. A way to capture data.
-	This is easily done by just playing matches and saving replays.
-2. A way to analyze this date.
-	Logically, you will watch the replays and take notes.
-3. A way to get feedback.
-	Training mode + offline sessions + online sessions = immediate feedback.
+1. A way to capture data. This is easily done by just playing matches and 
+saving replays.
+2. A way to analyze this date. Logically, you will watch the replays and 
+take notes.
+3. A way to get feedback. Training mode + offline sessions
++ online sessions = immediate feedback.
 
 Without feedback, you are wasting time. How can you tell what to adjust if 
 there is nothing to measure your data with?
