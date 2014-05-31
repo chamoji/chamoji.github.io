@@ -48,21 +48,16 @@ Not a bad first week.
 What I am looking for in logging my progress are ways to improve the training
 process.
 
-Ideally the cycle of improvement / learning for me would be:
-1. A way to capture data. 
+The main components are the following:
+- A way to capture data.
+- A way to analyze the data.
+- A way to get feedback based on changes you make from analysis.
 
-This is easily done by just playing matches and 
-saving replays.
-
-2. A way to analyze this data. 
-
-Logically, you will watch the replays and 
-take notes.
-
-3. A way to get feedback. 
-
-Training mode + offline sessions
-+ online sessions = immediate feedback.
+With saved replays I have come up with a simple cycle.
+1. Netplay. Save replays that you believe are worth analyzing.
+2. Study those replays and take notes. 
+3. Return to netplay and apply what you noted. Go to Step 1 as needed 
+   and repeat the cycle.
 
 Without feedback, you are wasting time. How can you tell what to adjust if 
 there is nothing to measure your data with?
