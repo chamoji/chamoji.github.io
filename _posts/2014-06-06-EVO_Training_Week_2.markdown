@@ -15,5 +15,4 @@ Some thoughts while training for EVO:
 
 When you actually have a target in mind while practicing, it becomes 
 much clearer what you want to work on. The pressure to meet the demands
-of a big tournament only accelerate the rate at which you want to improve.
-
+of a big tournament only accelerate improvement. 
