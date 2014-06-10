@@ -10,7 +10,7 @@ Some thoughts while training for EVO:
 - How many of my victories can I account to pure knowledge and execution?
 - What type of player is this person?
 - Is there a better option than this move?
-- What are the common tendencies did I observe across multiple players
+- What are the common tendencies observed across multiple players
   playing the same character?
 
 When you actually have a target in mind while practicing, it becomes 
