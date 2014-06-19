@@ -1,0 +1,27 @@
+---
+layout: post
+title: "gli's playbook - BBCP Rachel"
+date: 2014-06-19
+---
+
+This is how I do things. Everything here is 100% faithful to what I do
+in matches.
+
+General Opening Moves
+=====================
+
+The opening move to take as Rachel depends on the matchup. I always aim
+to get pumpkin out as soon as possible. Therefore, I have to look at the
+entire cast and see what I can do to accomplish this goal.
+
+Restricted Opening
+------------------
+These are matchups in which your opponent has options to threaten you as
+soon as the match begins. The easiest example would be against Terumi. 
+He can use 5D to tag you at match start so I would take a defensive opening
+move there.
+
+- j.77 > j.214B (pumpkin)
+- 44D (backstep) > 214B (pumpkin)
+
+
