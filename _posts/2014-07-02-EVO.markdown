@@ -25,3 +25,6 @@ Highlighted in yellow are players that I have played / met / or know about.
 
 ![EVO 2014 BBCP Pool J11](/assets/evo2014_pool_j11.png)
 
+The actual site to browse the brackets are [here][j11].
+
+[j11]: http://evo2014.s3.amazonaws.com/brackets/bbcp_j11.html "BBCP Pool J11"
