@@ -1,7 +1,7 @@
 ---
 title: EVO 
 layout: post
-date: 2014-07-01
+date: 2014-07-02
 ---
 
 EVO registration is officially closed.
@@ -10,3 +10,13 @@ The waiting game begins. Three days prior to the start of EVO, the pool
 assignments will be announced. I am truly hoping that I get all of the
 strong players. In fact, I want to fight N-O first thing. What does it
 feel like to go against the best? 
+
+Bracket Preview
+---------------
+
+It looks like I have Galileo (Litchi) in my pool. My first match is up against
+another USA player I have never heard of. Have to expect anything and be 
+prepared.
+
+![EVO 2014 BBCP Pool J11](/assets/evo2014_pool_j11.png)
+
