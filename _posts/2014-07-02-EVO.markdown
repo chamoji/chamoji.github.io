@@ -33,6 +33,10 @@ The actual site to browse the brackets are [here][j11].
 
 Preparation
 -----------
-I ran a set against a Hakumen yesterday at the online arcade lobby. 10 straight
-wins! But, somehow, the player just afk'd and I was unable to get another match.
+I ran a set against a Hakumen yesterday at the online arcade lobby.
 
+*10 consecutive wins!* 
+
+But, somehow, the player just afk'd and I was unable to get another match.
+
+![BBCP Online - 10 win streak](/assets/bbcp_10wins.jpg)
