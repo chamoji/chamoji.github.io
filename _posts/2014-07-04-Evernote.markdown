@@ -9,4 +9,4 @@ Just going to leave this [here][evernote].
 These are my personal, handwritten notes from various notebooks. Slowly
 they will be converted into Evernote pages.
 
-[evernote]: http://glidesu.github.io/evernote/bbcp/index.html "Evernote" 
+[evernote]: http://glidesu.github.io/evernote/bbcp/ "Evernote" 
