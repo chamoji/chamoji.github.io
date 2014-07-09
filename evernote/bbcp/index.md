@@ -1,6 +1,6 @@
 ---
 title: BBCP Rachel - Evernote
-layout: page
+layout: post
 date: 2014-07-09
 ---
 
