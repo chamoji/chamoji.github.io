@@ -4,7 +4,9 @@ layout: post
 date: 2014-07-24
 ---
 
-Combo Parts
-----------
+*Mortal Slide vacuum starter (236A > 236A > ...)*
 
-1. 236A 236A 2B 3C 2C(2) jc j.[C] j.AB 3C 22B
+> Mortal Slide Ender: 236A > 236A > 236A > oki
+
+1. ... 2B > 3C > 2C(2) > jc > j.[C] > j.AB > 3C > 22B
+2. ... 3C > 2B > 5B > jc > j.B(2) > j.C > 3C > Mortal Slide Ender
