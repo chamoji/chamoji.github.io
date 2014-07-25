@@ -4,11 +4,7 @@ layout: post
 date: 2014-07-24
 ---
 
-Combo Notes
-===========
+Combo Parts
+----------
 
-Mortal Slide:
-
-	236A > 236A > 2B > 3C > 2C (2 hits) > 
-	jc > j.[C]~10f > j.A > j.B > 3C > 22B
-
+1. 236A 236A 2B 3C 2C(2) jc j.[C] j.AB 3C 22B
