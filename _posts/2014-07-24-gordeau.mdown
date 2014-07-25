@@ -1,0 +1,16 @@
+---
+title: UNIEL - Gordeau
+layout: post
+date: 2014-07-24
+---
+
+Gordeau
+=======
+
+Combo Parts
+-----------
+
+*Mortal Slide confirm*
+236A > 236A > 2B > 3C > 2C (2 hits) > 
+jc > j.[C]~10f > j.A > j.B > 3C > 22B
+
