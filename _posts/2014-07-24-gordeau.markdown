@@ -5,6 +5,7 @@ date: 2014-07-24
 ---
 
 *Mortal Slide vacuum starter: 236A > 236A > ...*
+
 *Mortal Slide Ender: 236A > 236A > 236A > oki*
 
 1. ... 2B > 3C > 2C(2) > jc > j.[C] > j.AB > 3C > 22B
