@@ -48,7 +48,8 @@ II. Combo
 
     Corner j.C:
 
-         j.C > 2C > 5C > jc[9] > j.A > j.[B] > j.]8[2A > 2[C] > 2]B[ > 2A > 2B > 2]C[ > delay j.B (detonate) okizeme
+         j.C > 2C > 5C > jc[9] > j.A > j.[B] > j.]8[2A > 2[C] > 2]B[ > 2A > 2B 
+         > 2]C[ > delay j.B (detonate) okizeme
 
     Hyde Craver Punish:
 
