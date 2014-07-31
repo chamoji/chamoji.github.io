@@ -26,7 +26,11 @@ I. Neutral
 
          Crouching Fragmentum Set > Concentrate
 
-         Observed from an Atepo match versus Hyde. Establish that you are willing to detonate Fragmentum in neutral to cover the space in front of you. Then, if you set a Crouching Fragmentum you can stay behind it from 5A distance and use this time to Concentrate and build GRD.
+         Observed from an Atepo match versus Hyde. Establish that you are 
+         willing to detonate Fragmentum in neutral to cover the space in 
+         front of you. Then, if you set a Crouching Fragmentum you can 
+         stay behind it from 5A distance and use this time to Concentrate 
+         and build GRD.
 
     c. Case Study
 
