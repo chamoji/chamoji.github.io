@@ -18,7 +18,7 @@ Table of Contents
         e. Sideswap
 
     III. Matchup Study
-        ELTNAM [updated 08/01/2014]
+        ELTNUM [updated 08/01/2014]
 
 I. Neutral
 ----------
@@ -63,6 +63,14 @@ II. Combo
 III. Matchup Study
 ------------------
 
-    ELTNAM
-        03/16/2014: atepo(VA) vs. Eltnam 
+    ELTNUM
+
+        03/16/2014: atepo(VA) vs. Eltnum 
         https://www.youtube.com/watch?v=73EDkXrc6lQ#t=13
+
+        Start:
+            EL can start the match off with gun shot. This will beat out all of your options unless you have meter for EX H. Laser ([6]4C).
+
+            If you got shot, neutral tech and hold up-back to charge for Orb and use j.C to establish your space. Launch A Ball if 
+                VA can jump back and try to use air A Ball.
+
