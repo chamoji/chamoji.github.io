@@ -16,6 +16,8 @@ Table of Contents
         c. Near Corner
         d. Corner 
         e. Sideswap
+    III. Matchup Study
+        1. ELTNAM
 
 I. Neutral
 ----------
@@ -56,3 +58,9 @@ II. Combo
         2C High Counter > 5C > jc[9] > j.A > j.B > j.]8[2[A] > 2[C] > 
         5B > 5]A[> 5A > 5B > 2]C[ > VO (detonate) > j.[9]C > j.FF > 
         j.]8[2C > IW okizeme (dash crouch Fragmentum)
+
+III. Matchup Study
+
+    ELTNAM
+        03/16/2014: atepo(VA) vs. Eltnam 
+        https://www.youtube.com/watch?v=73EDkXrc6lQ#t=13
