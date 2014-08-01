@@ -1,7 +1,7 @@
 > Under Night In-Birth Exe:Late (PS3) - Vatista Notes
 > Author: Westley Mojica (@glidesu)
 > Created: 2014-07-31
-> Updated: 2014-07-31
+> Updated: 2014-08-01
 
 Table of Contents
 
@@ -16,8 +16,9 @@ Table of Contents
         c. Near Corner
         d. Corner 
         e. Sideswap
+
     III. Matchup Study
-        1. ELTNAM
+        ELTNAM [updated 08/01/2014]
 
 I. Neutral
 ----------
@@ -60,6 +61,7 @@ II. Combo
         j.]8[2C > IW okizeme (dash crouch Fragmentum)
 
 III. Matchup Study
+------------------
 
     ELTNAM
         03/16/2014: atepo(VA) vs. Eltnam 
