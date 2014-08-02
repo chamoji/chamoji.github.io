@@ -1,9 +1,3 @@
----
-title: Under Night In-Birth Exe:Late (PS3) - Vatista Notes
-layout: post
-date: 2014-08-01
----
-
 Author: Westley Mojica (@glidesu)
 Created: 2014-07-31
 
