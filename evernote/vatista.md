@@ -4,8 +4,6 @@ layout: post
 date: 2014-08-03
 ---
 
-# Author: Westley Mojica (@glidesu)
-
 Table of Contents
 
     I. Neutral
