@@ -5,7 +5,6 @@ date: 2014-08-03
 ---
 
 # Author: Westley Mojica (@glidesu)
-# Created: 2014-07-31
 
 Table of Contents
 
