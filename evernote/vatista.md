@@ -1,9 +1,3 @@
----
-title: UNIEL - Vatista Notes
-layout: post
-date: 2014-08-03
----
-
 Table of Contents
 
     I. Neutral
