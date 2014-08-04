@@ -57,8 +57,9 @@ _The timing on the 66C is earlier than you expect._
 
 _Hitconfirm 2C into 4000+ dmg!_
 
-> 2C > 5C > jc[9] > j.A > j.B > [A] Drill > [3][C] > crouch Fragmentum A 
-> [3]A > A Laser (detonate) > crouch Fragmentum C > [2]B > EX Somersault
+> 2C > 5C > jc[9] > j.A > j.B > [A] Drill > 3C (hold forward and C) > 
+> crouch Fragmentum A > [3]A > A Laser (detonate) > 
+> crouch Fragmentum C > [2]B > EX Somersault
 
 ### Corner j.C ###
 
