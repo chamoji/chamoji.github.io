@@ -2,7 +2,7 @@
 title: Vatista Notes
 layout: post
 author: Westley Mojica
-twitter: @glidesu
+twitter: glidesu
 date: 2014-08-04
 ---
 
