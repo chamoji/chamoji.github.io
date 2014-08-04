@@ -1,20 +1,5 @@
-Table of Contents
-
-    I. Neutral
-        a. Overview
-        b. GRD Control
-        c. Case Study
-
-    II. Combo
-        a. Combo Theory
-        b. Midscreen
-        c. Near Corner
-        d. Corner 
-        e. Sideswap
-
-    III. Matchup Study
-        [ELTNUM] - 1 video
-        [GORDEAU] - 1 video
+Vatista Notes
+=============
 
 I. Neutral
 ----------
