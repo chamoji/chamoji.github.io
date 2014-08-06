@@ -1,10 +1,10 @@
 ---
-
 title:　ババババティスタ
 layout: post
-date: 08-06-2014
-
+date: 2014-08-06
 ---
+
+![VAT](/assets/unie_vat.png)
 
 ## How chuu2 are you? ##
 
@@ -31,4 +31,11 @@ Armed with my trusty LGP that I had recently purchased, I proceeded to stay in t
 I could execute a working game plan with Vatista. You cannot expect to win consistently with just 
 one style of play alone.
 
-!
+![LGP](/assets/lgp.png)
+
+I have studied a lot and tried to take away whatever it was that I found useful. 
+At work I even took notes and watched match videos during downtime.
+
+So, with some well-needed training mode grinded out and a couple of days later, the fruits of my labor came:
+
+![WIN](/assets/unie_win.jpg)
