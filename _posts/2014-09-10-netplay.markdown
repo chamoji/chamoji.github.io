@@ -4,10 +4,10 @@ layout: post
 date: 2014-09-10
 ---
 
-<img src='/assets/p4u2_grid_notes.jpg'>
+<img src='/assets/p4u2_grid_notes.jpg' width='800px' height='600px'>
 
 Netplay. Online matchmaking. Network play mode. Online play.
 
 Let's talk about it. Now.
 
-# netplay? #
+# Netplay? #
