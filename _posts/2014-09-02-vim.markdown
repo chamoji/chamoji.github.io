@@ -1,0 +1,13 @@
+---
+title: Case Study - Using Netplay and reaping the benefits.
+layout: post
+date: 2014-09-10
+---
+
+<img src='/assets/p4u2_grid_notes.jpg'>
+
+Netplay. Online matchmaking. Network play mode. Online play.
+
+Let's talk about it. Now.
+
+# netplay? #
