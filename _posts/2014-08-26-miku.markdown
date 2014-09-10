@@ -1,6 +1,0 @@
----
-title: DIVA 
-layout: post
-date: 2014-08-26
----
-
