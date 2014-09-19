@@ -4,10 +4,23 @@ layout: post
 date: 2014-09-10
 ---
 
-<img src='/assets/p4u2_grid_notes.jpg' width='800px' height='600px'>
+>Netplay. 
+>Online matchmaking. 
+>Network play mode. 
+>Online play.
 
-Netplay. Online matchmaking. Network play mode. Online play.
-
-Let's talk about it. Now.
+Let's talk about it.
 
 # Netplay? #
+Netplay is the term used for any matchmaking service conducted online with
+other players in real-time.
+
+With fighting games, it is both the best and the worst feature to be introduced
+in this new generation of gaming. 
+
+
+
+
+
+
+<img src='/assets/p4u2_grid_notes.jpg' width='640px' height='480px'>
