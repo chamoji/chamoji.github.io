@@ -11,18 +11,12 @@ date: 2014-09-19
 
 Let's talk about it.
 
-# Netplay? #
 
-Netplay is the term used for any matchmaking service conducted online with
-other players in real-time.
+> Netplay is the term used for any matchmaking service conducted online with
+> other players in real-time. 
 
-With fighting games, it is both the best and the worst feature to be introduced
-in this new generation of gaming. 
-
-<img src='/assets/p4u2_grid_notes.jpg' width='640px' height='480px'>
 
 ## The Unfortunate Reality of Netplay in the US ##
 
-Being able to play matches with anyone in the country is a wonderful thing.
-What could possibly go wrong? Unfortunately, the network infrastructure here in the states is subpar compared to the East. Fiber Optic internet services, while present in the US, comes at a premium. Compare this with Japan where fiber optic internet is the standard.
+
 
