@@ -1,10 +1,10 @@
 # Site settings
-username: glidesu
-title: gli. desu. yo. 
-email: ore.wa.glidesu@gmail.com 
-description: "gli. desu. yoroshiku."
+username: chamoji
+title: I am chamoji
+email: westley.mojica@gmail.com 
+description: "the joy of learning"
 baseurl: ""
-url: "http://glidesu.github.io"
+url: "http://chamoji.github.io"
 
 # Build settings
 markdown: kramdown
