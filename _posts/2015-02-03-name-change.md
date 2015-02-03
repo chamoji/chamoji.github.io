@@ -1,6 +1,6 @@
 ---
+layout: post
 title: "glidesu -> chamoji"
-author: Westley Mojica
 date: 2015-02-03
 ---
 
