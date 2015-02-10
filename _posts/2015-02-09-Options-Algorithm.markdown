@@ -101,11 +101,12 @@ in line.
 
 So a typical scenario would be like the following:
 
-* Option 1 gets in line. 
-* It gets the leader's position and stores it in its own queue. 
-* Then it stores its own position in a global queue that all elements can see. 
-* This sets up the global queue for additional elements so that they can grab the previous element's position. 
-* The next person in line can now follow the previous person in line.
+	1. Option#1 gets in line. It gets the leader's position and stores it in
+		its own queue.
+	2. Then it stores its own position in a global queue that all 
+		elements can see. This sets up the global queue for additional elements
+		so that they can grab the previous element's position. 
+	3. The next person in line can now follow the previous person in line.
 
 So now this leaves us with the same problem. When do we update the
 positions of each element in the queue if distance will cause
@@ -119,8 +120,6 @@ Solution: The path queue offers a reliable figure such that using it as our
 basis for updating the positions of each element will be consistent. A path
 queue's size solves our problem.
 
----
-
 # And Finally... #
 We come to a general algorithm we can apply in any language to
 get the snake-like behavior of the classic Options of Gradius fame.
@@ -132,29 +131,27 @@ in their path queues.
 
 In the main game loop:
 
-if (playerMoved) { 
-	for (options : globalOptionsQueue) { 
-		moveOptions();
+	if (playerMoved) { 
+		for (options : globalOptionsQueue) { 
+			moveOptions();
+		}
 	}
-}
 
 moveOptions() function:
 
-if (isFirstOption) {
-	updatePath(leaderPosition);
-} 
-else {
-	updatePath(previousOptionPosition));
-}
+	if (isFirstOption) {
+		updatePath(leaderPosition);
+	} 
+	else {
+		updatePath(previousOptionPosition));
+	}
 
-if (pathSize > pathDelay) {
-	myX = headOfPathQueueX;
-	myY = headOfPathQueueY;
-	removeHeadOfQueue();
-	updateGlobalOptionsQueue();
-}
-
----
+	if (pathSize > pathDelay) {
+		myX = headOfPathQueueX;
+		myY = headOfPathQueueY;
+		removeHeadOfQueue();
+		updateGlobalOptionsQueue();
+	}
 
 So there you have it. The thought process behind my implementation of the
 Options Algorithm.  
