@@ -93,8 +93,14 @@ guard with 1 or 4, and then Dead Angle with 6P+K).
 
 	Answer: 135 different ways to input burst. 135/288 = 46.875% of total possible inputs
 
-Given that a round lasts 99 seconds and that Xrd runs on 60 frames per second, there are a total
-of 99*60 = 5940 frames of input in a given round.
+Given that a round lasts 99 seconds and that Xrd runs on 60 frames per second: 
+
+	99 seconds * 60 frames per second = 5940 frames of input in a given round.
 
 This is assuming things like hitstop, superflash, or time slowing effects do not add additional
-frames by momentarily stopping the clock. 
+frames by momentarily stopping the clock.
+
+What does all of this mean?
+
+I don't know. I just wanted to do some math.
+See you next time.
