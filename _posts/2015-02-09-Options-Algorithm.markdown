@@ -1,4 +1,10 @@
-# Introduction #
+---
+title: The Options Algorithm
+layout: post
+date: 2015-02-09
+---
+
+## Introduction ##
 Any fan of Gradius should recognize the unique "Options"
 mechanic that has become a staple of the series. Some of these fans
 are also programmers, hobbyist or otherwise, that would like to mimic
@@ -8,7 +14,7 @@ implementation and examples.
 
 Enter: this tutorial.
 
-# Tutorial Objective #
+## Tutorial Objective ##
 In this tutorial I will describe my way of implementing the
 Options snake-like behavior in a general way. I will briefly describe
 an approach I took that failed initially. Then I finish off by
@@ -21,7 +27,7 @@ algorithm. It's up to you to understand it and apply the concepts
 explained here. For that reason I have very sparingly sprinkled some
 pseudo-code to illustrate certain points.
 
-# Options Algorithm Basics #
+## Options Algorithm Basics ##
 For those unfamiliar with the concept of Options here is a
 quick rundown of what they are all about.
 
@@ -44,14 +50,14 @@ following properties:
   additional follower.
  
 
-# Attempt 1: Distance-Based Approach #
+## Attempt 1: Distance-Based Approach ##
 Observe the following code which is executed during a movement
 command (player has input left, right, up, or down):
 
-if (distance_from_leader > GAP_SIZE) {
-	// get main ship's previous position
-	// update the Options coordinates 
-}
+	if (distance_from_leader > GAP_SIZE) {
+		// get main ship's previous position
+		// update the Options coordinates 
+	}
 
 This approach uses distance as an indicator of when to move the 
 Options to the leader's previous coordinates. The gap size 
@@ -85,7 +91,7 @@ have a way of making the options follow the leader so it's a start. Keeping
 track of some size of the path seemed to be working, it just needs something 
 simpler to accomplish the task.
 
-# Attempt 2: Queue-Based Approach #
+## Attempt 2: Queue-Based Approach ##
 So knowing that distance wasn't the way to go I had to search
 through other avenues. Eventually I arrived at a very basic data
 structure. 
@@ -104,12 +110,12 @@ in line.
 
 So a typical scenario would be like the following:
 
-	1. Option#1 gets in line. It gets the leader's position and stores it in
-		its own queue.
-	2. Then it stores its own position in a global queue that all 
-		elements can see. This sets up the global queue for additional elements
-		so that they can grab the previous element's position. 
-	3. The next person in line can now follow the previous person in line.
+Option#1 gets in line. It gets the leader's position 
+and stores it in its own queue. Then it stores its own 
+position in a global queue that all elements can see. 
+This sets up the global queue for additional elements so 
+that they can grab the previous element's position. The next person 
+in line can now follow the previous person in line.
 
 So now this leaves us with the same problem. When do we update the
 positions of each element in the queue if distance will cause
@@ -123,9 +129,7 @@ Solution: The path queue offers a reliable figure such that using it as our
 basis for updating the positions of each element will be consistent. A path
 queue's size solves our problem.
 
----
-
-# And Finally... #
+## And Finally... ##
 We come to a general algorithm we can apply in any language to
 get the snake-like behavior of the classic Options of Gradius fame.
 The only thing new we need to add is a factor called a delay or a
@@ -136,29 +140,27 @@ in their path queues.
 
 In the main game loop:
 
-if (playerMoved) { 
-	for (options : globalOptionsQueue) { 
-		moveOptions();
+	if (playerMoved) { 
+		for (options : globalOptionsQueue) { 
+			moveOptions();
+		}
 	}
-}
 
 moveOptions() function:
 
-if (isFirstOption) {
-	updatePath(leaderPosition);
-} 
-else {
-	updatePath(previousOptionPosition));
-}
+	if (isFirstOption) {
+		updatePath(leaderPosition);
+	} 
+	else {
+		updatePath(previousOptionPosition));
+	}
 
-if (pathSize > pathDelay) {
-	myX = headOfPathQueueX;
-	myY = headOfPathQueueY;
-	removeHeadOfQueue();
-	updateGlobalOptionsQueue();
-}
-
----
+	if (pathSize > pathDelay) {
+		myX = headOfPathQueueX;
+		myY = headOfPathQueueY;
+		removeHeadOfQueue();
+		updateGlobalOptionsQueue();
+	}
 
 So there you have it. The thought process behind my implementation of the
 Options Algorithm.  
