@@ -39,6 +39,15 @@ To figure this out, we need to know which figures to add to get the result we wa
 A single direction move is simply selecting a number from 1-9 and combining it with
 the number of different button combinations possible given 6 inputs.
 
-Total Combinations of Single-Direction Moves = (Number of directions) * (Button Combination)
+	Total Combinations of Single-Direction Moves = (Number of directions) * (Button Combination)
 
+	Number of directions = 9 choose 1
+	Number of directions = 9
 
+	Number of Button Combinations = (6 choose 1) + (6 choose 2) + ... + (6 choose 6)
+	Number of Button Combinations = 6 + 15 + 20 + 15 + 6 + 1 = 63
+
+	9 * 63 = 567 total single-directional moves
+
+So this means there are 567 different ways to input one direction (1-9) 
+with any combination of the 6 buttons (P, P+K, P+K+S, ... , P+K+S+H+D+T).

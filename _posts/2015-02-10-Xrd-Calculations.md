@@ -41,12 +41,28 @@ the number of different button combinations possible given 6 inputs.
 
 	Total Combinations of Single-Direction Moves = (Number of directions) * (Button Combination)
 
-### Number of directions possible ###
-
 	Number of directions = 9 choose 1
 	Number of directions = 9
 
-### Number of different button combinations ###
-
 	Number of Button Combinations = (6 choose 1) + (6 choose 2) + ... + (6 choose 6)
 	Number of Button Combinations = 6 + 15 + 20 + 15 + 6 + 1 = 63
+
+	9 * 63 = 567 total single-directional moves
+
+So this means there are 567 different ways to input one direction (1-9) 
+with any combination of the 6 buttons (P, P+K, P+K+S, ... , P+K+S+H+D+T).
+
+But, for actual application's sake, let's ignore the number of combinations that include the 
+Taunt button.
+
+If we ignore the Taunt button, we have...
+
+	9 * [ (5 choose 1) + (5 choose 2) + ... + (5 choose 5) ]
+	9 * 31
+	279 single-directional moves (excluding Taunt button)
+
+Interesting.
+
+Ok, math time is over. See you next time.
+
+
