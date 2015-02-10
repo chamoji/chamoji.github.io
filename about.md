@@ -4,10 +4,7 @@ title: About
 permalink: /about/
 ---
 
-You have found it. The answer to nothing.
-
 My name is Westley Mojica.
-
 But you might know me under a different alias.
 
 Rhythm-Action community:
@@ -22,7 +19,8 @@ FGs:
 * gli
 
 This blog is my way of sharing knowledge I have accumulated
-over my lifetime. In a way, it's also a way of sharing how much
-I do not know.
+over my lifetime. By the same token, it's also how I share
+what I _don't_ know.
 
-No matter the case, I always do it for _the joy of learning_.
+No matter the case, 
+I always do it for _the joy of learning_.
