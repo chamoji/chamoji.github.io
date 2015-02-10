@@ -54,7 +54,7 @@ with no button input attached.
 For _d_ directions and _b_ button-inputs, the total number of combinations _I_
 is given by the following equation:
 
-<img src="../assets/total_inputs.png"/>
+<img src="/assets/total_inputs.png"/>
 
 So this means there are 576 different ways to input one direction
 with any combination of the 6 buttons.
