@@ -81,7 +81,7 @@ Options, the position of the leader is temporarily unused.
 
 Therefore, as long as:
 
-	*distance_from_leader <= GAP_SIZE*
+	distance_from_leader <= GAP_SIZE
 
 the Options will "drift" further and further away from the leader.
 
@@ -152,7 +152,7 @@ moveOptions() function:
 		updatePath(leaderPosition);
 	} 
 	else {
-		updatePath(previousOptionPosition));
+		updatePath(previousOptionPosition);
 	}
 
 	if (pathSize > pathDelay) {
