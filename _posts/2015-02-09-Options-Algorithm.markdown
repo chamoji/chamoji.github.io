@@ -40,8 +40,9 @@ following properties:
 * Ways to retrieve the main ship's coordinates and store it.
 * Ways to update the Options coordinates based on some rule.
 * Only updates the positions when the player inputs a movement command.
-* Follows the leader's path exactly but with some delay for each additional
-	follower
+* Follows the leader's path exactly but with some delay for each 
+  additional follower.
+ 
 
 # Attempt 1: Distance-Based Approach #
 Observe the following code which is executed during a movement
@@ -52,10 +53,12 @@ if (distance_from_leader > GAP_SIZE) {
 	// update the Options coordinates 
 }
 
-This approach uses distance as an indicator of when to move the Options to the 
-leader's previous coordinates. The gap size condition is a very explicit way 
-of getting the Options separated. Up to a certain point, this approach 
-accomplishes trailing the leader well.
+This approach uses distance as an indicator of when to move the 
+Options to the leader's previous coordinates. The gap size 
+condition is a very explicit way of getting the Options separated.
+Up to a certain point, this approach accomplishes trailing the 
+leader well.
+
 
 The problem with this implementation? 
 
