@@ -28,8 +28,8 @@ For buttons, Xrd recognizes 6 inputs:
 * Taunt (T)
 
 
-	How many different combinations of _Direction_ + _Button_ exist?
-	In other words, how many single direction "moves" are there?
+How many different combinations of _Direction_ + _Button_ exist?
+In other words, how many single direction "moves" are there?
 
 For example, 6H is a single direction move whereas 623H is not.
 
