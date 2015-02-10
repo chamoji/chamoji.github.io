@@ -164,5 +164,3 @@ moveOptions() function:
 
 So there you have it. The thought process behind my implementation of the
 Options Algorithm.  
-
-Last updated: February 9, 2015 by chamoji
