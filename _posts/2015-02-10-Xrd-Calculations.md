@@ -34,16 +34,17 @@ For buttons, Xrd recognizes 6 inputs:
 
 How many different combinations of _Direction_ + _Button_ exist?
 
-Another way of asking this question is, at any given frame, how many possible inputs
-does the game recognize?
+Another way of asking this question is, at any given frame, how many possible
+inputs does the game recognize?
 
 
 ## Enumerating the combinations ##
 
-To figure this out, we need to know which figures to add to get the result we want.
+To figure this out, we need to know which figures to add to get the result
+we want.
 
-A single direction move is simply selecting a number from 1-9 and combining it with
-the number of different button combinations possible given 6 inputs. 
+A single direction move is simply selecting a number from 1-9 and combining it 
+with the number of different button combinations possible given 6 inputs. 
 
 A single direction move also consists of only a directional input 
 with no button input attached.
@@ -54,7 +55,12 @@ with no button input attached.
 	Number of directions = 9 choose 1
 	Number of directions = 9
 
-	Number of Button Combinations = (6 choose 1) + (6 choose 2) + ... + (6 choose 6)
+	Number of Button Combinations = 
+	(6 choose 1) + 
+	(6 choose 2) + 
+	... + 
+	(6 choose 6)
+
 	Number of Button Combinations = 6 + 15 + 20 + 15 + 6 + 1 = 63
 
 	9 * 63 = 567 total button combinations with direction
@@ -64,8 +70,8 @@ with no button input attached.
 So this means there are 576 different ways to input one direction (1-9) 
 with any combination of the 6 buttons (P, P+K, P+K+S, ... , P+K+S+H+D+T).
 
-But, for actual application's sake, let's ignore the number of combinations that include the 
-Taunt button.
+But, for actual application's sake, let's ignore the number of 
+combinations that include the Taunt button.
 
 If we ignore the Taunt button, we have...
 
@@ -76,29 +82,34 @@ If we ignore the Taunt button, we have...
 
 Interesting.
 
-So if you are truly aiming for only 1 input out of the 288 possible (excluding taunt)...
+So if you are truly aiming for only 1 input out of the 288 possible 
+(excluding taunt)...
 
 	1/288 = ~0.35% of total possible inputs
 
 But, this isn't the whole story. 
 
-In a match, the dynamics of the fight changes which inputs you actually want to come out. 
+In a match, the dynamics of the fight changes which inputs you 
+actually want to come out. 
 
 In other words, which inputs actually result in some action differs over time.
 
-For example, during blockstun you are limited to a certain subset of the total moves (continue to
-guard with 1 or 4, and then Dead Angle with 6P+K).
+For example, during blockstun you are limited to a certain subset of the total
+moves (continue to guard with 1 or 4, and then Dead Angle with 6P+K).
 
-* How many ways are there to input burst (including overlapping inputs for RC and IK Activate)?
+* How many ways are there to input burst (including overlapping inputs 
+	for RC and IK Activate)?
 
-	Answer: 135 different ways to input burst. 135/288 = 46.875% of total possible inputs
+	Answer: 
+	135 different ways to input burst. 
+	135/288 = 46.875% of total possible inputs
 
 Given that a round lasts 99 seconds and that Xrd runs on 60 frames per second: 
 
 	99 seconds * 60 frames per second = 5940 frames of input in a given round.
 
-This is assuming things like hitstop, superflash, or time slowing effects do not add additional
-frames by momentarily stopping the clock.
+This is assuming things like hitstop, superflash, or time slowing effects do
+not add additional frames by momentarily stopping the clock.
 
 What does all of this mean?
 
