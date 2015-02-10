@@ -27,6 +27,7 @@ For buttons, Xrd recognizes 6 inputs:
 * Dust (D)
 * Taunt (T)
 
+
 	How many different combinations of _Direction_ + _Button_ exist?
 	In other words, how many single direction "moves" are there?
 
@@ -37,9 +38,11 @@ For example, 6H is a single direction move whereas 623H is not.
 To figure this out, we need to know which figures to add to get the result we want.
 
 A single direction move is simply selecting a number from 1-9 and combining it with
-the number of different button combinations possible given 6 inputs.
+the number of different button combinations possible given 6 inputs. A single direction move
+also consists of only a directional input with no button input attached.
 
-	Total Combinations of Single-Direction Moves = (Number of directions) * (Button Combination)
+	Total Combinations of Single-Direction Moves =
+	(Number of directions) * (Button Combination) + (Number of directions)
 
 	Number of directions = 9 choose 1
 	Number of directions = 9
@@ -47,9 +50,11 @@ the number of different button combinations possible given 6 inputs.
 	Number of Button Combinations = (6 choose 1) + (6 choose 2) + ... + (6 choose 6)
 	Number of Button Combinations = 6 + 15 + 20 + 15 + 6 + 1 = 63
 
-	9 * 63 = 567 total single-directional moves
+	9 * 63 = 567 total button combinations with direction
 
-So this means there are 567 different ways to input one direction (1-9) 
+	Total Single-Direction moves = 567 + 9 = 576
+
+So this means there are 576 different ways to input one direction (1-9) 
 with any combination of the 6 buttons (P, P+K, P+K+S, ... , P+K+S+H+D+T).
 
 But, for actual application's sake, let's ignore the number of combinations that include the 
@@ -58,11 +63,23 @@ Taunt button.
 If we ignore the Taunt button, we have...
 
 	9 * [ (5 choose 1) + (5 choose 2) + ... + (5 choose 5) ]
-	9 * 31
-	279 single-directional moves (excluding Taunt button)
+	9 * 31 = 279
+	279 + 9 * (5 choose 0) = 
+	288 single-directional moves (excluding Taunt button)
 
 Interesting.
 
-Ok, math time is over. See you next time.
+So at any given frame in a match you want exactly 1 input out of the 288 possible (excluding taunt).
+So that probability is 1/288 = ~0.35%
 
+But, this isn't the whole story. In a match the dynamics of the fight change which inputs you actually
+want to come out. In other words, which inputs actually result in some action differs over time.
+For example, during blockstun you are limited to a certain subset of the total moves (continue to
+guard with 1 or 4, and then Dead Angle with 6P+K).
+
+With those facts in mind, we can come up with a list of percentages regarding different inputs:
+
+
+
+Ok, math time is over. See you next time.
 
