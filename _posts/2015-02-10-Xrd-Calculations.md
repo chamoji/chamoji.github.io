@@ -7,6 +7,7 @@ date: 2015-02-10
 Let's do some math.
 
 Xrd recognizes 9 different directional inputs:
+
 * Neutral (5)
 * Left (4)
 * Right (6)
@@ -17,14 +18,15 @@ Xrd recognizes 9 different directional inputs:
 * Down-Left (1)
 * Down-Right (3)
 
+
 For buttons, Xrd recognizes 6 inputs:
+
 * Punch (P)
 * Kick (K)
 * Slash (S)
 * H-Slash (H)
 * Dust (D)
 * Taunt (T)
-
 
 How many different combinations of _Direction_ + _Button_ exist?
 In other words, how many single direction "moves" are there?
