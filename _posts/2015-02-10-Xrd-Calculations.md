@@ -49,40 +49,17 @@ with the number of different button combinations possible given 6 inputs.
 A single direction move also consists of only a directional input 
 with no button input attached.
 
-	Total Combinations of Single-Direction Moves =
-	(Number of directions) * (Button Combination) + (Number of directions)
+### Total Combinations of Single-Direction Moves ###
 
-	Number of directions = 9 choose 1
-	Number of directions = 9
+For _d_ directions and _b_ button-inputs, the total number of combinations _I_
+is given by the following equation:
 
-	Number of Button Combinations = 
-	(6 choose 1) + 
-	(6 choose 2) + 
-	... + 
-	(6 choose 6)
+<img="../assets/total_inputs.png"/>
 
-	Number of Button Combinations = 6 + 15 + 20 + 15 + 6 + 1 = 63
+So this means there are 576 different ways to input one direction
+with any combination of the 6 buttons.
 
-	9 * 63 = 567 total button combinations with direction
-
-	Total Single-Direction moves = 567 + (9 * (6 choose 0)) = 576
-
-So this means there are 576 different ways to input one direction (1-9) 
-with any combination of the 6 buttons (P, P+K, P+K+S, ... , P+K+S+H+D+T).
-
-But, for actual application's sake, let's ignore the number of 
-combinations that include the Taunt button.
-
-If we ignore the Taunt button, we have...
-
-	9 * [ (5 choose 1) + (5 choose 2) + ... + (5 choose 5) ]
-	9 * 31 = 279
-	279 + (9 * (5 choose 0)) = 
-	288 single-directional moves (excluding Taunt button)
-
-Interesting.
-
-So if you are truly aiming for only 1 input out of the 288 possible 
+So if you are aiming for only one specific input out of the 288 possible 
 (excluding taunt)...
 
 	1/288 = ~0.35% of total possible inputs
@@ -97,16 +74,16 @@ In other words, which inputs actually result in some action differs over time.
 For example, during blockstun you are limited to a certain subset of the total
 moves (continue to guard with 1 or 4, and then Dead Angle with 6P+K).
 
-* How many ways are there to input burst (including overlapping inputs 
-	for RC and IK Activate)?
+So, how many ways are there to input burst?
+Let's also include overlapping inputs for RC and IK Activation in the total.
 
-	Answer: 
 	135 different ways to input burst. 
 	135/288 = 46.875% of total possible inputs
 
 Given that a round lasts 99 seconds and that Xrd runs on 60 frames per second: 
 
-	99 seconds * 60 frames per second = 5940 frames of input in a given round.
+	99 seconds * 60 frames per second
+	= 5940 frames of input in a given round.
 
 This is assuming things like hitstop, superflash, or time slowing effects do
 not add additional frames by momentarily stopping the clock.
