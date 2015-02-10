@@ -4,7 +4,11 @@ layout: post
 date: 2015-02-10
 ---
 
-Let's do some math.
+I think it's interesting to think about games in a different way.
+
+_Forget tier lists._
+
+Instead, let's do some math on some more general mechanics...
 
 Xrd recognizes 9 different directional inputs:
 
@@ -29,9 +33,10 @@ For buttons, Xrd recognizes 6 inputs:
 * Taunt (T)
 
 How many different combinations of _Direction_ + _Button_ exist?
-In other words, how many single direction "moves" are there?
 
-For example, 6H is a single direction move whereas 623H is not.
+Another way of asking this question is, at any given frame, how many possible inputs
+does the game recognize?
+
 
 ## Enumerating the combinations ##
 
@@ -69,8 +74,8 @@ If we ignore the Taunt button, we have...
 
 Interesting.
 
-So at any given frame in a match you want exactly 1 input out of the 288 possible (excluding taunt).
-So that probability is 1/288 = ~0.35%
+So if you are truly aiming for only 1 input out of the 288 possible (excluding taunt).
+1/288 = ~0.35%
 
 But, this isn't the whole story. In a match the dynamics of the fight change which inputs you actually
 want to come out. In other words, which inputs actually result in some action differs over time.
@@ -79,6 +84,8 @@ guard with 1 or 4, and then Dead Angle with 6P+K).
 
 With those facts in mind, we can come up with a list of percentages regarding different inputs:
 
+	How many ways to input burst (including overlapping inputs for RC and IK Activate)?
+	Answer: 135 different ways to burst. 135/288 = 46.875%
 
 
 Ok, math time is over. See you next time.
