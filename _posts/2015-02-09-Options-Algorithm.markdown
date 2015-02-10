@@ -1,3 +1,9 @@
+---
+title: The Options Algorithm
+layout: post
+date: 2015-02-09
+---
+
 # Introduction #
 Any fan of Gradius should recognize the unique "Options"
 mechanic that has become a staple of the series. Some of these fans
