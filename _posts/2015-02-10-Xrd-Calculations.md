@@ -62,7 +62,7 @@ with any combination of the 6 buttons.
 So if you are aiming for only one specific input out of the 288 possible 
 (excluding taunt)...
 
-	1/288 = ~0.35% of total possible inputs
+	1/288 = ~0.35%
 
 But, this isn't the whole story. 
 
@@ -77,13 +77,15 @@ moves (continue to guard with 1 or 4, and then Dead Angle with 6P+K).
 So, how many ways are there to input burst?
 Let's also include overlapping inputs for RC and IK Activation in the total.
 
-	135 different ways to input burst. 
-	135/288 = 46.875% of total possible inputs
+	135 different ways to input burst.
+
+	135/288 	
+	= 46.875% of total possible inputs
 
 Given that a round lasts 99 seconds and that Xrd runs on 60 frames per second: 
 
 	99 seconds * 60 frames per second
-	= 5940 frames of input in a given round.
+	= 5940 frames 
 
 This is assuming things like hitstop, superflash, or time slowing effects do
 not add additional frames by momentarily stopping the clock.
