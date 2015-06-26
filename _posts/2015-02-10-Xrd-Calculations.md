@@ -92,5 +92,9 @@ not add additional frames by momentarily stopping the clock.
 
 What does all of this mean?
 
-I don't know. I just wanted to do some math.
-See you next time.
+Find out in the next post in which I will go more in-depth with the mechanics
+of Xrd!
+
+See you next blog post. Thanks for reading.
+
+
