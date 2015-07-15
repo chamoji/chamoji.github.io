@@ -1,7 +1,7 @@
 ---
 title: Applied Holistic Learning - Fighting Games
 layout: post
-date: 2015-07-09 
+date: 2015-07-14 
 ---
 
 Scott Young uses the term *Holistic Learning* to describe his learning process.
