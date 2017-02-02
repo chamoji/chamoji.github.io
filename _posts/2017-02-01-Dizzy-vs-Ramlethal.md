@@ -1,24 +1,24 @@
 ---
-title: Dizzy vs. Ramlethal
+layout: post
+title: "GUILTY GEAR XRD -REVELATOR-: Dizzy Notes - vs. Ramlethal"
 date: 2017-02-01
-style: post
 ---
 
-Dizzy vs. Ramlethal
+# Dizzy vs. Ramlethal
 
-Dizzy's Advantages
+## Dizzy's Advantages
 
 1. Air movement
 2. Long sweep
 3. 2S anti-air
 
-Ramlethal's Advantages
+## Ramlethal's Advantages
 
 1. Superior normals with swords.
 2. Overhead options have high-return.
 3. Corner trap often leads to one-chance game for opponent.
 
-Dizzy's Strategy
+## Dizzy's Strategy
 
 This is an uphill battle for Dizzy due to her slower attacks compared to Ram.
 
