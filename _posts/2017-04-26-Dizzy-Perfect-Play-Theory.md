@@ -18,3 +18,7 @@ Losing Conditions:
 2. Improper burst usage
 3. Poor meter management 
 4. Unable to keep opponent out of close-range
+
+How many mixups until Dizzy wins?
+
+vs. Sol: KD > Mixup 1 > ... > corner ... win
