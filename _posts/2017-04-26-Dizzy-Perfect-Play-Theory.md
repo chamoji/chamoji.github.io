@@ -19,6 +19,17 @@ Losing Conditions:
 3. Poor meter management 
 4. Unable to keep opponent out of close-range
 
-How many mixups until Dizzy wins?
+---
 
-vs. Sol: KD > Mixup 1 > ... > corner ... win
+# Highest Return #
+
+1. Detonated KBubble > 6H Knockdown in corner > okizeme
+2. Corner Dust Wall conversion > garosupe
+
+---
+
+# Setting up for High Returns #
+
+1. Ice Spike ender > DFish > TK KBubble > H Arrows
+	or... > DFish > TK KBubble > react to opponent
+	or... > DFish > TK PBubble > IAD forward (check opponent's reaction) (IAD backward)
