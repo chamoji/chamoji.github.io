@@ -54,10 +54,12 @@ following properties:
 Observe the following code which is executed during a movement
 command (player has input left, right, up, or down):
 
+```
 	if (distance_from_leader > GAP_SIZE) {
 		// get main ship's previous position
 		// update the Options coordinates 
 	}
+```
 
 This approach uses distance as an indicator of when to move the 
 Options to the leader's previous coordinates. The gap size 
@@ -81,7 +83,10 @@ Options, the position of the leader is temporarily unused.
 
 Therefore, as long as:
 
+```
 	distance_from_leader <= GAP_SIZE
+```
+
 
 the Options will "drift" further and further away from the leader.
 
@@ -140,14 +145,17 @@ in their path queues.
 
 In the main game loop:
 
+```
 	if (playerMoved) { 
 		for (options : globalOptionsQueue) { 
 			moveOptions();
 		}
 	}
+```
 
 moveOptions() function:
 
+```
 	if (isFirstOption) {
 		updatePath(leaderPosition);
 	} 
@@ -161,6 +169,7 @@ moveOptions() function:
 		removeHeadOfQueue();
 		updateGlobalOptionsQueue();
 	}
+```
 
 So there you have it. The thought process behind my implementation of the
 Options Algorithm.  

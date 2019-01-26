@@ -27,9 +27,3 @@ Losing Conditions:
 2. Corner Dust Wall conversion > garosupe
 
 ---
-
-# Setting up for High Returns #
-
-1. Ice Spike ender > DFish > TK KBubble > H Arrows
-	or... > DFish > TK KBubble > react to opponent
-	or... > DFish > TK PBubble > IAD forward (check opponent's reaction) (IAD backward)
